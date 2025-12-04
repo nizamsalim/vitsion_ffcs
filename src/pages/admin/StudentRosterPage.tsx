@@ -37,18 +37,7 @@ function StudentsRosterPage() {
   };
 
   const handleConfirmUpload = () => {
-    // NOTE: Replace 'admin123' with your actual password validation logic
-    if (confirmPassword === process.env.NEXT_PUBLIC_ADMIN_PASSWORD) {
-      setIsConfirmModalOpen(false);
-      setConfirmPassword("");
-      if (fileInputRef.current) {
-        fileInputRef.current.click();
-      }
-    } else {
-      // In a real app, you'd show an error message in the UI
-      alert("Incorrect password. Please try again.");
-      setConfirmPassword("");
-    }
+    //
   };
 
   return (
@@ -108,7 +97,7 @@ function StudentsRosterPage() {
         />
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
           <button
-            onClick={() => setIsConfirmModalOpen(true)}
+            onClick={() => {}}
             className={`flex items-center justify-center gap-3 px-6 py-3 text-white font-semibold rounded-lg shadow-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ${
               uploaderName === "" || !uploadYear || isPending
                 ? "bg-slate-600 hover:bg-slate-700"
