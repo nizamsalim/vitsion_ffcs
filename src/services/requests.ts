@@ -1,6 +1,6 @@
 import { Collections } from "@/lib/constants";
 import { db } from "@/lib/firebase";
-import { ImageService } from "@/lib/supabase";
+import { ImageService } from "./image";
 import {
   Role,
   type HourRequest,
